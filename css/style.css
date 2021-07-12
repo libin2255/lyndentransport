@@ -148,7 +148,9 @@
   .facebook-btn {
     padding: 14px 16px !important;
   }
-
+  .fill-form {
+    width: 100% !important;
+  }
   .form-content {
     height: 300px !important;
     margin-bottom: 50px;
@@ -184,6 +186,10 @@
   height: 100vh;
   background-position: center bottom;
   background-size: cover;
+}
+
+i.fa.fa-bars {
+  color: #fff;
 }
 
 .hero .my-container {
