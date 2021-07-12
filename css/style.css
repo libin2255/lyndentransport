@@ -103,7 +103,6 @@
   .hero-title {
     top: 40%;
   }
-
   .fill-form {
     padding: 0 50px !important;
   }
@@ -449,7 +448,7 @@ span.word-signin {
 
 .facebook-btn {
   background: #4267b2;
-  padding: 14px 60px;
+  padding: 14px 30px;
   outline: none;
   border: none;
   border-radius: 10px;
@@ -476,7 +475,7 @@ span.word-signin {
 
 .google-btn {
   background: #ea4335;
-  padding: 14px 60px;
+  padding: 14px 30px;
   outline: none;
   border: none;
   border-radius: 10px;
