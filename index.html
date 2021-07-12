@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lynden Transportation Company</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="hero">
+        <div class="my-container">
+            <div class="nav-bar">
+                <div class="nav-logo">
+                    <img src="./images/logo/logo-mix.svg" alt="">
+                </div>
+                <div id="nav-list" class="nav-list">
+                    <i class="fa fa-close" onclick="closeMenu()" aria-hidden="true"></i>
+                    <ul>
+                        <li class="list-active"><a href="#">Track Order</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Settings</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()" aria-hidden="true"></i>
+            </div>
+            <div class="hero-title">
+                <h1>Lynden Transport</h1>
+                <p>Simplify Your Difficult Projects</p>
+                <div class="hero-btn">
+                    <button><a href="">Sign Up</a></button>
+                    <button><a href="">Sign In</a></button>
+                    <button><a href="">Get a quote</a></button>
+                </div>
+                <div class="mob-hero-btn">
+                    <div class="flx-vw-btn-hero">
+                        <button><a href="">Sign Up</a></button>
+                        <button><a href="">Sign In</a></button>
+                    </div>
+                    <button class="quote-btn"><a href="">Get a quote</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="singup-form">
+        <div class="my-container">
+            <div class="form-content col-md">
+            </div>
+            <div class="fill-form col-md">
+                <div class="form-top-content">
+                    <h2>Create your account</h2>
+                    <p>Already have an account? <span class="word-signin">Sign in</span></p>
+                </div>
+                <form action="/action_page.php">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="pwd">Password:</label>
+                        <input type="password" class="form-control" id="pwd" placeholder="Enter your password"
+                            name="pswd">
+                    </div>
+                    <div class="number-group">
+                        <label class="car-label">Your Cars Name: </label>
+                        <input list="cars" value="" class="car-list">
+                        <datalist id="cars">
+                            <option data-countryCode="DZ" value="213">Algeria (+213)</option>
+                            <option data-countryCode="AD" value="376">Andorra (+376)</option>
+                            <option data-countryCode="AO" value="244">Angola (+244)</option>
+                            <option data-countryCode="AI" value="1264">Anguilla (+1264)</option>
+                            <option data-countryCode="AG" value="1268">Antigua &amp; Barbuda (+1268)</option>
+                            <option data-countryCode="AR" value="54">Argentina (+54)</option>
+                            <option data-countryCode="AM" value="374">Armenia (+374)</option>
+                        </datalist>
+                        <input type="tel" class="form-control left-border-none" id="phone"
+                            placeholder="Enter your phone number" name="phone">
+                    </div>
+                    <div class="form-group form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                        </label>
+                    </div>
+                    <button type="submit" class="form-btn">Next</button>
+                </form>
+                <div class="social-account">
+                    <p>Or sign up with social account</p>
+                </div>
+                <div class="social-media">
+                    <div class="sdr"><button class="facebook-btn"><a href="">Facebook</a></button></div>
+                    <div class="tdr"><button class="google-btn"><a href="">Google</a></button></div>
+                </div>
+                <p class="privacy-policy">By clicking “Sign Up” you agree to our <span class="word-signin">terms and
+                        conditions</span> as well as our <span class="word-signin">privacy policy</span></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        var show = document.getElementById("nav-list");
+        function showMenu() {
+            show.style.right = "0";
+
+        }
+        function closeMenu() {
+            show.style.right = "-200px";
+
+        }
+    </script>
+</body>
+
+</html>
